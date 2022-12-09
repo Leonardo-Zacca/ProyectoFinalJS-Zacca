@@ -41,11 +41,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
                 <li>
-                  <button class="boton-menu boton-categoria active">Todos los productos</button>
+                  <button id="todos" class="boton-menu boton-categoria active">Todos los productos</button>
                 </li>
-                <li><button class="boton-menu boton-categoria">Impresoras</button></li>
-                <li><button class="boton-menu boton-categoria">Componentes</button></li>
-                <li><button class="boton-menu boton-categoria">Filamentos</button></li>
+                <li><button  id="impresoras" class="boton-menu boton-categoria">Impresoras</button></li>
+                <li><button id="componentes" class="boton-menu boton-categoria">Componentes</button></li>
+                <li><button id="filamentos" class="boton-menu boton-categoria">Filamentos</button></li>
                 <li>
                   <a class="boton-menu boton-carrito" href="./carrito.html">
                     <i class="bi bi-cart-fill"></i>
@@ -71,44 +71,10 @@
 
       <!-- Main -->
       <main>
-        <h2 class="titulo-principal">Todos los productos</h1>
+        <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h1>
             <!--* Cards -->
-            <div class="contenedor-productos">
-                <div class="producto">
-                    <img class="producto-imagen" src="./images/logoMobile.png" alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto-titulo">Impresora 01</h3>
-                        <p class="producto-precio">$1000</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-
-                <div class="producto">
-                    <img class="producto-imagen" src="./images/logoMobile.png" alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto-titulo">Impresora 02</h3>
-                        <p class="producto-precio">$1000</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-
-                <div class="producto">
-                    <img class="producto-imagen" src="./images/logoMobile.png" alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto-titulo">Impresora 03</h3>
-                        <p class="producto-precio">$1000</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
-
-                <div class="producto">
-                    <img class="producto-imagen" src="./images/logoMobile.png" alt="">
-                    <div class="producto-detalles">
-                        <h3 class="producto-titulo">Impresora 04</h3>
-                        <p class="producto-precio">$1000</p>
-                        <button class="producto-agregar">Agregar al carrito</button>
-                    </div>
-                </div>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- !Se rellena con elementos de JS -->
             </div>
       </main>
 
