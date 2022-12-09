@@ -1,0 +1,241 @@
+/* Fuente  font-family: 'Ubuntu', sans-serif;  */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');  
+
+:root{
+    --clr-plata: #CEC3C1;
+    --clr-rojo: #DE3C4B;
+    --clr-marron: #240115;
+    --clr-turquesa: #87F5FB;
+    --clr-violetaosc: #2F131E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.logo {
+    width: auto;
+    height: 7rem;
+}
+
+.navbar {
+    background-color: #DE3C4B !important;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+}
+.boton-menu {
+    margin: 1rem;
+    background-color: transparent;
+    border: 0;
+    color: #240115;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.boton.menu:hover {
+    color: #CEC3C1;
+}
+
+.boton-menu.active{
+    background-color: #CEC3C1;
+    border-radius: .5rem;
+}
+.boton-carrito, .boton-volver {
+    display: inline-block;
+}
+
+.numerito {
+    background-color: #ccc6c6;
+    border-radius: 1rem;
+    color: #2F131E;
+    padding: .25rem;
+}
+
+main{
+    background-color: aliceblue;
+    
+}
+
+.titulo-principal {
+    color:  #2F131E;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.producto {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+}
+.producto-imagen {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.producto-detalles {
+    background-color: #DE3C4B;
+    color: #2F131E;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-titulo{
+    font-size: 1rem;
+}
+
+.producto-agregar {
+    border: 0;
+    background-color: aliceblue;
+    color: #240115;
+    padding: .25rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 2px solid #2F131E;
+    transition: background-color .2s, color .2s;
+}
+.producto-agregar:hover {
+    background-color: #2F131E;
+    color: #CEC3C1;
+}
+
+.footer {
+    background-color: #DE3C4B;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.texto-footer {
+    color: #2F131E;
+    font-size: .85rem;
+    text-align: center;
+}
+
+/* Carrito */
+
+.contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.carrito-vacio,
+.carrito-comprado {
+    color: #DE3C4B;
+
+}
+
+.carrito-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-producto { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(209, 182, 182);
+    color:#DE3C4B;
+    padding: .5rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto-imagen {
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto small {
+    font-size: .75rem;
+}
+
+.carrito-producto-eliminar {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrito-acciones-vaciar {
+    border: 0;
+    background-color: #e76673;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #2F131E;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carrito-acciones-derecha{
+    display: flex;
+
+}
+
+.carrito-acciones-total{
+    display: flex;
+    border: 0;
+    background-color: #ccc6c6;
+    padding: 1rem;
+    color: #2F131E;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    gap: 1rem;
+}
+
+.carrito-acciones-comprar {
+    border: 0;
+    background-color: #e76673;
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    color: #2F131E;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.disabled {
+    display: none;
+}
