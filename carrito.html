@@ -67,10 +67,10 @@
       <main>
         <h2 class="titulo-principal">Carrito de compras</h2>
         <div class="contenedor-carrito">
-            <p class="carrito-vacio disabled">
+            <p id="carrito-vacio" class="carrito-vacio disabled">
                 Tu carrito está vacío <i class="bi bi-emoji-frown"></i>
             </p>
-            <div class="carrito-productos">
+            <div id="carrito-productos" class="carrito-productos">
 
                 <div class="carrito-producto">
                     <img class="carrito-producto-imagen" src="./images/logoMobile.png" alt="">
@@ -119,7 +119,7 @@
 
             </div>
 
-            <div class="carrito-acciones">
+            <div id="carrito-acciones" class="carrito-acciones">
                 <div class="carrito-acciones-izquierda">
                     <button class="carrito-acciones-vaciar">Vaciar carrito</button>
                 </div>
@@ -133,7 +133,7 @@
                 </div>
             </div>
 
-            <p class="carrito-comprado disabled">Muchas gracias por tu compra!<i class="bi bi-emoji-smile"></i></p>
+            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra!<i class="bi bi-emoji-smile"></i></p>
         </div>
       </main>
 
@@ -146,6 +146,7 @@
     </div>
 
     <script src="./Js/app.js"></script>
+    <script src="./carrito.html"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
